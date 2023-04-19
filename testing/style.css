@@ -62,8 +62,8 @@ body{
   font-size: 16px;
   text-decoration: none;
   display: block;
-  padding: 5px 30px;
-  line-height: 60px;
+  padding: 3px 30px;
+  line-height: 55px;
 }
 
 .side-bar .menu .item a:hover{
@@ -116,7 +116,7 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 50px;
+  padding: 45px;
 }
 
 .main h1{
