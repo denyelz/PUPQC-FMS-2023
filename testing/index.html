@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PUPQCFMS</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Cloudflare fonts and functions -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+    <!-- Cloudflare script css -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
+
+    <!--BOOTSTRAP CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!--CSS FOR FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,100&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  </head>
+  <body>
+
+    <div class="menu-btn">
+      <i class="fas fa-bars" style="color: #800000;"></i>
+    </div>
+    <div class="side-bar">
+      <div class="close-btn">
+        <i class="fas fa-times" style="color: #800000;"></i>
+      </div>
+      <div class="menu">
+        
+        <div class="item"><a href="#"><i class="fas fa-desktop"></i>Dashboard</a></div>
+
+        <div class="item"><a href="#"><i class="fas fa-desktop"></i>Profile</a></div>
+        
+        <div class="item">
+          <a class="sub-btn"><i class="fas fa-table"></i>Account Setup<i class="fas fa-angle-right dropdown"></i></a>
+          <div class="sub-menu">
+            <a href="#" class="sub-item">Roles</a>
+            <a href="#" class="sub-item">Designation</a>
+            <a href="#" class="sub-item">Specialization</a>
+            <a href="#" class="sub-item">Program</a>
+            <a href="#" class="sub-item">Academic Role</a>
+            <a href="#" class="sub-item">Faculty Type</a>
+          </div>
+        </div>
+
+        <div class="item"><a href="#"><i class="fas fa-desktop"></i>Add User</a></div>
+
+        <div class="item">
+          <a class="sub-btn"><i class="fas fa-cogs"></i>Classes<i class="fas fa-angle-right dropdown"></i></a>
+          <div class="sub-menu">
+            <a href="#" class="sub-item">Class Schedule</a>
+            <a href="#" class="sub-item">Observation</a>
+          </div>
+        </div>
+
+        <div class="item">
+          <a class="sub-btn"><i class="fas fa-cogs"></i>Documents<i class="fas fa-angle-right dropdown"></i></a>
+          <div class="sub-menu">
+            <a href="#" class="sub-item">Requirement Types</a>
+            <a href="#" class="sub-item">Requirement Bin</a>
+          </div>
+        </div>
+
+        <div class="item">
+          <a class="sub-btn"><i class="fas fa-cogs"></i>Activities<i class="fas fa-angle-right dropdown"></i></a>
+          <div class="sub-menu">
+            <a href="#" class="sub-item">Lists</a>
+            <a href="#" class="sub-item">Types</a>
+          </div>
+        </div>
+
+        <div class="item">
+          <a class="sub-btn"><i class="fas fa-cogs"></i>Reports<i class="fas fa-angle-right dropdown"></i></a>
+          <div class="sub-menu">
+            <a href="#" class="sub-item">Class Attendance</a>
+            <a href="#" class="sub-item">Class Observation</a>
+            <a href="#" class="sub-item">Submission of Documents</a>
+            <a href="#" class="sub-item">Activities</a>
+          </div>
+        </div>
+
+        <div class="item"><a href="#"><i class="fas fa-info-circle"></i>About</a></div>
+      </div>
+    </div>
+    <section class="main">
+      <h1>Dashboard<br>overview</h1>
+    </section>
+
+    <script type="text/javascript">
+    $(document).ready(function(){
+      //jquery for toggle sub menus
+      $('.sub-btn').click(function(){
+        $(this).next('.sub-menu').slideToggle();
+        $(this).find('.dropdown').toggleClass('rotate');
+      });
+
+      //jquery for expand and collapse the sidebar
+      $('.menu-btn').click(function(){
+        $('.side-bar').addClass('active');
+        $('.menu-btn').css("visibility", "hidden");
+      });
+
+      $('.close-btn').click(function(){
+        $('.side-bar').removeClass('active');
+        $('.menu-btn').css("visibility", "visible");
+      });
+    });
+    </script>
+
+  </body>
+</html>
