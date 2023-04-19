@@ -21,6 +21,7 @@
 
 body{
   min-height: 100vh;
+  /* background-image: url(/testing/bg.jpg); */
   background-size: cover;
   background-position: center;
 }
@@ -50,6 +51,7 @@ body{
 
 .side-bar .menu{
   width: 100%;
+  margin-top: 4rem;
 }
 
 .side-bar .menu .item{
@@ -59,11 +61,11 @@ body{
 
 .side-bar .menu .item a{
   color: #800000;
-  font-size: 16px;
+  font-size: 14px;
   text-decoration: none;
   display: block;
   padding: 3px 30px;
-  line-height: 55px;
+  line-height: 50px;
 }
 
 .side-bar .menu .item a:hover{
@@ -72,7 +74,9 @@ body{
   transition: 0.3s ease;
 }
 
-.side-bar .menu .item i{
+.side-bar .menu .item i,
+.side-bar .menu .item i .sub_div
+{
   margin-right: 15px;
 }
 
@@ -132,4 +136,9 @@ body{
     font-size: 40px;
     line-height: 60px;
   }
+}
+
+.sub_div {
+  position: absolute;
+  bottom: 0px;
 }
