@@ -1,8 +1,8 @@
 <?php 
 // Start session 
-		if(!session_id()){ 
-		    session_start(); 
-		} 
+		// if(!session_id()){ 
+		//     session_start(); 
+		// } 
  
 
 		// // Retrieve session data 
