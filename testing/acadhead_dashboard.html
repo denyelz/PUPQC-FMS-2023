@@ -257,15 +257,17 @@
                 showCloseButton: true,
                 showCancelButton: true,
                 focusConfirm: false,
-                confirmButtonText:
-                '<a href="landing_page.html">Yes</a>',
+                confirmButtonText: 'Yes',
                 confirmButtonColor: '#3085d6',
                 confirmButtonAriaLabel: '...',
                 // cancelButtonText:
                 // '<i class="fa fa-thumbs-down"></i>',
                 cancelButtonColor: '#d33',
                 cancelButtonAriaLabel: '...'
-            });
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    window.open("landing_page.html");
+                }})
 
             // Swal.fire({
             //     title: 'Are you sure?',
@@ -284,7 +286,7 @@
             //         )
             //     }
             // });
-        });        
+        });  
     </script>
 
     
