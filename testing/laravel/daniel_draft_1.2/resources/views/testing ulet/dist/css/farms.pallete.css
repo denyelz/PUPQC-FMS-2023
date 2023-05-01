@@ -1,6 +1,6 @@
 :root
 {
-    --pallete-1: #3a080d;
+    --pallete-1: #830404;
     --pallete-2: #A36605;
     --pallete-3: #F3C51C;
     --pallete-4: #ECE09D;
@@ -37,4 +37,11 @@
 .text-col-2
 {
     color: var(--text-color-2);
+}
+
+/*Stylesheet for text dropdown*/
+
+.p-drop
+{
+  font-size: .8rem;
 }
