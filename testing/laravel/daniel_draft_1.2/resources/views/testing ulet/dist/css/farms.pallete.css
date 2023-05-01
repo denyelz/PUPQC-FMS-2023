@@ -26,7 +26,27 @@
 
 .pal-4
 {
-    background-color: var(--pallete-4);
+    color: var(--pallete-4);
+}
+
+.text-pal-1
+{
+    color: var(--pallete-1);
+}
+
+.text-pal-2
+{
+    color: var(--pallete-2);
+}
+
+.text-pal-3
+{
+    color: var(--pallete-3);
+}
+
+.text-pal-4
+{
+    color: var(--pallete-4);
 }
 
 .text-col-1
