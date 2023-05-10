@@ -15,6 +15,7 @@
       })
     });
   });
+<<<<<<< HEAD
 
   $(function() {
     var Toast = Swal.mixin({
@@ -33,3 +34,5 @@
       })
     });
   });
+=======
+>>>>>>> b45e7d4fccde5d25bdcde8420bdcec7f417297a7
