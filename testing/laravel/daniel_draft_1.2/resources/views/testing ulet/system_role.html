@@ -3,7 +3,7 @@
     <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    
         <!-- Title with PUP logo -->
         <link rel="icon" href="dist/img/pup.png" />
         <title>PUPQC | Faculty Records and Monitoring System</title>
@@ -11,31 +11,31 @@
         <!-- Google Font: Source Sans Pro -->
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
 
-
+        
         <!-- Font Awesome -->
         <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
-
+        
         <!-- Ionicons -->
         <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
-
+        
         <!-- Tempusdominus Bootstrap 4 -->
         <link rel="stylesheet" href="plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
-
+        
         <!-- iCheck -->
         <link rel="stylesheet" href="plugins/icheck-bootstrap/icheck-bootstrap.min.css">
-
+        
         <!-- JQVMap -->
         <link rel="stylesheet" href="plugins/jqvmap/jqvmap.min.css">
-
+        
         <!-- Theme style -->
         <link rel="stylesheet" href="dist/css/farms.min.css">
-
+        
         <!-- overlayScrollbars -->
         <link rel="stylesheet" href="plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
-
+        
         <!-- Daterange picker -->
         <link rel="stylesheet" href="plugins/daterangepicker/daterangepicker.css">
-
+        
         <!-- summernote -->
         <link rel="stylesheet" href="plugins/summernote/summernote-bs4.min.css">
 
@@ -95,13 +95,13 @@
                         </div>
                     </li>
                     <!-- User Panel -->
-                    <div id="dropdownHoverButton" data-dropdown-toggle="dropdownHover" data-dropdown-trigger="click" class="user-panel d-flex">
+                    <div id="dropdownHoverButton" data-dropdown-toggle="dropdownHover" data-dropdown-trigger="hover" class="user-panel d-flex">
                         <div class="image mt-2">
                             <img src="https://lh3.googleusercontent.com/a-/ACB-R5SPNI6x5R3YO5R7LcdJlXMQGtn6kMwaDgvvu2S6=s40-c" class="img-circle elevation-2" alt="User Image">
                         </div>
                         <div class="info m-auto">
                             <a href="#" class="d-block text-col-1 text-bold">Demelyn Monzon</a>
-                            <span class="d-block text-maroon text-regular" style="font-size: .8rem; cursor: pointer;">Academic Head</span>
+                            <span class="d-block text-maroon text-regular" style="font-size: .8rem;">Academic Head</span>
                         </div>
                     </div>
                     <!-- Profile Deopdown -->
@@ -110,7 +110,7 @@
                             <a href="#" class="block px-4 py-2 text-white">Profile</a>
                         </li>
                         <li>
-                            <a id="show-modal-logout" class="block px-4 py-2 text-white" style="cursor: pointer;" >Log out</a>
+                            <a id="show-modal-logout" class="block px-4 py-2 text-white">Log out</a>
                         </li>
                         </ul>
                     </div>
@@ -133,7 +133,7 @@
                         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
 
                             <li class="nav-item">
-                                <a href="" class="nav-link active">
+                                <a href="acad_head_db.html" class="nav-link active">
                                 <i class="nav-icon fas fa-th"></i>
                                 <p>
                                     Dashboard
@@ -151,7 +151,7 @@
                                 </a>
                                 <ul class="nav nav-treeview">
                                     <li class="nav-item">
-                                        <a href="system_role.html" class="nav-link">
+                                        <a href="" class="nav-link">
                                             <i class="fas fa-user nav-icon"></i>
                                         <p class="p-drop">System Role</p>
                                         </a>
@@ -247,7 +247,7 @@
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="error_page.html" class="nav-link">
+                                    <a href="" class="nav-link">
                                     <i class="fas fa-clipboard nav-icon"></i>
                                     <p class="p-drop">Reports</p>
                                     </a>
@@ -263,307 +263,221 @@
             <div class="content-wrapper">
                 <!-- Content Header (Page header) -->
                 <div class="content-header">
-                <div class="container-fluid">
-                    <div class="row-col-sm-6 mb-2">
-                        <div class="col-md-6 ml-4">
-                            <h1 class="m-0">Dashboard</h1>
+                    <div class="container-fluid">
+                        <div class="row-col-sm-6 mb-2">
+                            <div class="col-md-3 ml-4">
+                                <h1 class="m-0">System Roles</h1>
+                            </div>
                         </div>
                     </div>
-                </div>
                 </div>
 
                 <!-- Main content -->
                 <section class="container">
-                    <div class="row">
-                        <div class="col-md-7 m-auto">
-                            <div class="row">
-
-                            <div class="col-md-6">
-                                <div class="container-fluid">
-                                    <div class="info-box">
-                                        <span class="info-box-icon  pal-1 pal-1 text-col-2 elevation-1"><i class="fas fa-user-shield"></i></span>
-
-                                        <div class="info-box-content">
-                                        <span class="info-box-text">Academic Heads</span>
-                                        <span class="info-box-number">
-                                            0
-                                        </span>
-                                        </div>
-                                    </div>
+                    <div class="mr-5 ml-5">
+                        <div class="card">
+                            <div class="card-header">
+                                <h3 class="card-title mt-2">List of Roles</h3>
+                                <div class="text-right">
+                                    <button data-toggle="modal" data-target="#modal-xl-create" type="button" class="px-4 py-2 text-sm font-medium text-center text-white bg-green-800 rounded-lg hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-green-300 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">Create New Role</button>
                                 </div>
                             </div>
 
-                            <div class="col-md-6">
-                                <div class="container-fluid">
-                                    <div class="info-box">
-                                        <span class="info-box-icon pal-1 text-col-2 elevation-1"><i class="fas fa-folder"></i></span>
-
-                                        <div class="info-box-content">
-                                        <span class="info-box-text">Faculty Bin Percentage</span>
-                                        <span class="info-box-number">
-                                            0
-                                            <small>%</small>
-                                        </span>
-                                        </div>
-                                    </div>
-                                </div>
+                            <div class="card-header row">
+                                <p class="card-title ml-4 mt-1 row-cols-2" style="font-size: .9rem;">Show entries</p>
+                                <select name="dataTable_length" aria-controls="dataTable" class="ml-5 col-1 custom-select custom-select-sm form-control form-control-sm">
+                                    <option value="10">
+                                        10
+                                    </option>
+                                    <option value="25">
+                                        25
+                                    </option>
+                                    <option value="50">
+                                        50
+                                    </option>
+                                    <option value="100">
+                                        100
+                                    </option>
+                                </select>
                             </div>
+                            
+                            <!-- Tables of roles -->
+                            <div class="card-body p-0">
+                                <table class="table table-striped">
+                                    <thead class="pal-1 text-col-2">
+                                        <tr>
+                                            <th>Roles</th>
+                                            <th style="width: 50%;">Description</th>
+                                            <th class="text-center" style="width: 25%;">Actions</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Academic Head</td>
+                                            <td>
+                                                <div class="">
+                                                    <div class="">
+                                                    ... xxx ... xxx ... xxx ...... xxx ... xxx ... xxx ...... xxx ... xxx ... xxx ...
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="text-center">
+                                                <button data-toggle="modal" data-target="#modal-xl" type="button" class="px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">View</button>
+                                                <button data-toggle="modal" data-target="#modal-xl-edit" type="button" class="px-3 py-2 text-sm font-medium text-center text-white bg-yellow-400 rounded-lg hover:bg-yellow-800 focus:ring-4 focus:outline-none focus:ring-yellow-300 dark:bg-yellow-600 dark:hover:bg-yellow-700 dark:focus:ring-yellow-800">Edit</button>
+                                                <button id="button1" type="" class="px-3 py-2 text-sm font-medium text-center text-white bg-red-700 rounded-lg hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-800">Delete</button>
+                                            </td>
+                                        </tr>
 
-                            <div class="col-md-6">
-                                <div class="container-fluid">
-                                    <div class="info-box">
-                                        <span class="info-box-icon pal-1 text-col-2 pal-1 elevation-1"><i class="fas fa-user-graduate"></i></span>
+                                        <tr>
+                                            <td>Faculty member</td>
+                                            <td>
+                                                <div class="">
+                                                    <div class="">
+                                                    ... xxx ... xxx ... xxx ...... xxx ... xxx ... xxx ...... xxx ... xxx ... xxx ...
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="text-center">
+                                                <button data-toggle="modal" data-target="#modal-xl" type="button" class="px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">View</button>
+                                                <button data-toggle="modal" data-target="#modal-xl-edit" type="button" class="px-3 py-2 text-sm font-medium text-center text-white bg-yellow-400 rounded-lg hover:bg-yellow-800 focus:ring-4 focus:outline-none focus:ring-yellow-300 dark:bg-yellow-600 dark:hover:bg-yellow-700 dark:focus:ring-yellow-800">Edit</button>
+                                                <button id="button2" type="" class="px-3 py-2 text-sm font-medium text-center text-white bg-red-700 rounded-lg hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-800">Delete</button>
+                                            </td>
+                                        </tr>
 
-                                        <div class="info-box-content">
-                                        <span class="info-box-text">University Directors</span>
-                                        <span class="info-box-number">
-                                            0
-                                        </span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                                        <tr>
+                                            <td>Director</td>
+                                            <td>
+                                                <div class="">
+                                                    <div class="">
+                                                    ... xxx ... xxx ... xxx ...... xxx ... xxx ... xxx ...... xxx ... xxx ... xxx ...
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="text-center">
+                                                <button data-toggle="modal" data-target="#modal-xl" type="button" class="px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">View</button>
+                                                <button data-toggle="modal" data-target="#modal-xl-edit" type="button" class="px-3 py-2 text-sm font-medium text-center text-white bg-yellow-400 rounded-lg hover:bg-yellow-800 focus:ring-4 focus:outline-none focus:ring-yellow-300 dark:bg-yellow-600 dark:hover:bg-yellow-700 dark:focus:ring-yellow-800">Edit</button>
+                                                <button id="button3" type="" class="px-3 py-2 text-sm font-medium text-center text-white bg-red-700 rounded-lg hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-800">Delete</button>
+                                            </td>
+                                        </tr>
 
-                            <div class="col-md-6">
-                                <div class="container-fluid">
-                                    <div class="info-box">
-                                        <span class="info-box-icon pal-1 text-col-2 pal-1 elevation-1"><i class="fas fa-user-friends"></i></span>
-
-                                        <div class="info-box-content">
-                                        <span class="info-box-text">Total Meetings</span>
-                                        <span class="info-box-number">
-                                            0
-                                        </span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-md-6">
-                                <div class="container-fluid">
-                                    <div class="info-box">
-                                        <span class="info-box-icon pal-1 text-col-2 pal-1 elevation-1"><i class="fas fa-users-cog"></i></span>
-
-                                        <div class="info-box-content">
-                                        <span class="info-box-text">Staff & Checkers</span>
-                                        <span class="info-box-number">
-                                            0
-                                        </span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-md-6">
-                                <div class="container-fluid">
-                                    <div class="info-box">
-                                        <span class="info-box-icon pal-1 text-col-2 pal-1 elevation-1"><i class="fas fa-flag"></i></span>
-
-                                        <div class="info-box-content">
-                                        <span class="info-box-text">Total Activities</span>
-                                        <span class="info-box-number">
-                                            0
-                                        </span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-md-6">
-                                <div class="container-fluid">
-                                    <div class="info-box">
-                                        <span class="info-box-icon pal-1 text-col-2 pal-1 elevation-1"><i class="fas fa-user-plus"></i></span>
-
-                                        <div class="info-box-content">
-                                        <span class="info-box-text">Total Faculty Members</span>
-                                        <span class="info-box-number">
-                                            0
-                                        </span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-md-6">
-                                <div class="container-fluid">
-                                    <div class="info-box">
-                                        <span class="info-box-icon pal-1 text-col-2 pal-1 elevation-1"><i class="fas fa-clipboard-list"></i></span>
-
-                                        <div class="info-box-content">
-                                        <span class="info-box-text">Reports Status</span>
-                                        <span class="info-box-number">
-                                            0 <small>%</small>
-                                        </span>
-
-                                        </div>
-                                    </div>
-                                </div>
+                                        <tr>
+                                            <td>Staff</td>
+                                            <td>
+                                                <div class="">
+                                                    <div class="">
+                                                    ... xxx ... xxx ... xxx ...... xxx ... xxx ... xxx ...... xxx ... xxx ... xxx ...
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="text-center">
+                                                <button data-toggle="modal" data-target="#modal-xl" type="button" class="px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">View</button>
+                                                <button data-toggle="modal" data-target="#modal-xl-edit" type="button" class="px-3 py-2 text-sm font-medium text-center text-white bg-yellow-400 rounded-lg hover:bg-yellow-800 focus:ring-4 focus:outline-none focus:ring-yellow-300 dark:bg-yellow-600 dark:hover:bg-yellow-700 dark:focus:ring-yellow-800">Edit</button>
+                                                <button id="button4" type="" class="px-3 py-2 text-sm font-medium text-center text-white bg-red-700 rounded-lg hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-800">Delete</button>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                    <tfoot class="text-col-1" style="font-size: .9rem;">
+                                        <tr>
+                                            <td>
+                                                <div class="col-sm-12">
+                                                    <div class="dataTables_info" id="dataTable_info" role="status" aria-live="polite">
+                                                        Showing 1 to 4 of 4 entries
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tfoot>
+                                </table>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-md-5">
-                        <div class="container-fluid">
-                            <div class="card">
-                                <div class="card-header">
-                                    <h3 class="card-title mt-1">
-                                    <i class="fas fa-chart-pie"></i>
-                                    Summaries
-                                    </h3>
-                                    <div class="card-tools">
-                                    <ul class="nav nav-pills ml-auto">
-                                        <li class="nav-item">
-                                        <a class="nav-link active " href="#XD" data-toggle="tab">Admin</a>
-                                        </li>
-                                        <li class="nav-item">
-                                        <a class="nav-link" href="#xd" data-toggle="tab">AcadHead</a>
-                                        </li>
-                                    </ul>
-                                    </div>
-                                </div>
-                                <div class="card-body">
-                                    <div class="tab-content">
-                                        <!-- charts -->
-                                        <div class="chart tab-pane active" id="XD" style="position: relative; height: 300px;">
-                                            <!-- <canvas id=""></canvas> -->
-                                        </div>
-                                        <div class="chart tab-pane" id="xd" style="position: relative; height: 300px;">
-                                            <!-- <canvas id=""></canvas> -->
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                     </div>
                 </section>
 
-                <!-- Analytics -->
-                <div class="row m-auto">
-                    <div class="col-md-12">
-                    <div class="card">
-                        <div class="card-header">
-                        <h5 class="card-title">Monthly Recap Report</h5>
-
-                        <div class="card-tools">
-                            <button type="button" class="btn btn-tool" data-card-widget="collapse">
-                            <i class="fas fa-minus"></i>
-                            </button>
-                            <div class="btn-group">
-                            <button type="button" class="btn btn-tool dropdown-toggle" data-toggle="dropdown">
-                                <i class="fas fa-wrench"></i>
-                            </button>
-                            <div class="dropdown-menu dropdown-menu-right" role="menu">
-                                <a href="#" class="dropdown-item">Action</a>
-                                <a href="#" class="dropdown-item">Another action</a>
-                                <a href="#" class="dropdown-item">Something else here</a>
-                                <a class="dropdown-divider"></a>
-                                <a href="#" class="dropdown-item">Separated link</a>
-                            </div>
-                            </div>
-                        </div>
-                        </div>
-                        <div class="card-body">
-                        <div class="row">
-                            <div class="col-md-8">
-                            <p class="text-center">
-                                <strong>Monitoring Status: 1 Jan, 2024 - 30 Nov, 2024</strong>
-                            </p>
-
-                            <div class="chart">
-                                <canvas id="salesChart" height="180" style="height: 180px;"></canvas>
-                            </div>
-
-                            </div>
-
-                            <div class="col-md-4">
-                            <p class="text-center">
-                                <strong>Goal Completion</strong>
-                            </p>
-
-                            <div class="progress-group">
-                                Overall Progress
-                                <span class="float-right"><b>80</b>/100</span>
-                                <div class="progress progress-sm">
-                                <div class="progress-bar bg-primary" style="width: 80%"></div>
+                <!--View Modal-->
+                <section class="content">
+                    <div class="modal fade" id="modal-xl">
+                        <div class="modal-dialog modal-xl">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h4 class="modal-title">View Modal</h4>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>One fine body&hellip;</p>
+                                </div>
+                                <div class="modal-footer justify-content-between">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Save changes</button>
                                 </div>
                             </div>
-
-
-                            <div class="progress-group">
-                                Submitted Requirement Bin
-                                <span class="float-right"><b>310</b>/400</span>
-                                <div class="progress progress-sm">
-                                <div class="progress-bar bg-success" style="width: 75%"></div>
-                                </div>
-                            </div>
-
-
-                            <div class="progress-group">
-                                <span class="progress-text">Activity Statuses</span>
-                                <span class="float-right"><b>30</b>/50</span>
-                                <div class="progress progress-sm">
-                                <div class="progress-bar bg-warning" style="width: 60%"></div>
-                                </div>
-                            </div>
-
-
-                            <div class="progress-group">
-                                Monthly Reports
-                                <span class="float-right"><b>30</b>/500</span>
-                                <div class="progress progress-sm">
-                                <div class="progress-bar bg-danger" style="width: 10%"></div>
-                                </div>
-                            </div>
-
-                            </div>
-
                         </div>
-
-                        </div>
-                        <div class="card-footer">
-                        <div class="row">
-                            <div class="col-sm-3 col-6">
-                            <div class="description-block border-right">
-                                <span class="description-percentage text-success"><i class="fas fa-caret-up"></i> 80%</span>
-                                <h5 class="description-header">Overall</h5>
-                                <span class="description-text">Progress</span>
-                            </div>
-
-                            </div>
-
-                            <div class="col-sm-3 col-6">
-                            <div class="description-block border-right">
-                                <span class="description-percentage text-danger"><i class="fas fa-caret-down"></i> 30%</span>
-                                <h5 class="description-header">Per term</h5>
-                                <span class="description-text">Reports</span>
-                            </div>
-
-                            </div>
-
-                            <div class="col-sm-3 col-6">
-                            <div class="description-block border-right">
-                                <span class="description-percentage text-success"><i class="fas fa-caret-up"></i> 20%</span>
-                                <h5 class="description-header">Requirement</h5>
-                                <span class="description-text">Requirement</span>
-                            </div>
-
-                            </div>
-
-                            <div class="col-sm-3 col-6">
-                            <div class="description-block">
-                                <span class="description-percentage text-warning"><i class="fas fa-caret-down"></i> 38%</span>
-                                <h5 class="description-header">GOAL</h5>
-                                <span class="description-text">COMPLETIONS</span>
-                            </div>
-
-                            </div>
-                        </div>
-
-                        </div>
-
                     </div>
+                </section>
+
+                <!--Edit Modal-->
+                <section class="content">
+                    <div class="modal fade" id="modal-xl-edit">
+                        <div class="modal-dialog modal-xl">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                            <h4 class="modal-title">Edit Modal</h4>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                            </div>
+                            <div class="modal-body">
+                            <p>One fine body&hellip;</p>
+                            </div>
+                            <div class="modal-footer justify-content-between">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                            </div>
+                        </div>
+                        <!-- /.modal-content -->
+                        </div>
+                        <!-- /.modal-dialog -->
                     </div>
-                </div>
+                </section>
+
+                <!--Create Modal-->
+                <section class="content">
+                    <div class="modal fade" id="modal-xl-create">
+                        <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title">Create Modal</h4>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body" style="height: 400px;">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="form-group col-md-12">
+                                            <label class="required-input">Title</label>
+                                            <input type="text" class="form-control" id="title" name="title" placeholder="Title" tabindex="1" required="">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="form-group col-md-12">
+                                            <label>Description</label>
+                                            <input type="text" class="form-control" id="description" name="description" placeholder="Description" tabindex="1">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer justify-content-between">
+                                <button type="button" class="btn btn-outline-danger" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-outline-primary swalDefaultSuccess">Save changes</button>
+                            </div>
+                        </div>
+                        <!-- /.modal-content -->
+                        </div>
+                        <!-- /.modal-dialog -->
+                    </div>
+                </section>
 
             </div>
 
@@ -576,7 +490,7 @@
                 </div>
             </footer>
         </div>
-
+            
         <!-- jQuery -->
         <script src="plugins/jquery/jquery.min.js"></script>
 
@@ -584,10 +498,16 @@
         <script src="plugins/jquery-ui/jquery-ui.min.js"></script>
 
         <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
-        <script>$.widget.bridge('uibutton', $.ui.button)</script>
+        <script>
+
+        $.widget.bridge('uibutton', $.ui.button)
+        </script>
 
         <!-- Bootstrap 4 -->
         <script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+        <!-- ChartJS -->
+        <script src="plugins/chart.js/Chart.min.js"></script>
 
         <!-- Sparkline -->
         <script src="plugins/sparklines/sparkline.js"></script>
@@ -630,18 +550,19 @@
         <!-- Flowbite Js -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
 
-        <!-- sweetalert2 logout -->
-        <script src="dist/js/sweetalert.logout.js"></script>
-
         <!-- FARMS DB 1-->
         <script src="dist/js/pages/dashboard.js"></script>
 
         <!-- FARMS DB 2 -->
         <script src="dist/js/pages/dashboard2.js"></script>
 
+        <!-- DB Chart for Summary  -->
+        <script src="dist/js/db_summaryChart.js"></script>
+
         <!-- SWEETALERTS SCRIPTS -->
         <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.js"></script>
+        
         <!-- Local script for warning modals -->
         <script src="dist/js/farms.swal.warning.modal.js"></script>
 
