@@ -6,7 +6,7 @@
       timer: 4000
     });
 
-    
+
 
     $('.swalDefaultSuccess').click(function() {
       Toast.fire({
@@ -15,7 +15,6 @@
       })
     });
   });
-<<<<<<< HEAD
 
   $(function() {
     var Toast = Swal.mixin({
@@ -25,7 +24,7 @@
       timer: 4000
     });
 
-    
+
 
     $('.swalDefaultSuccessSetObservation').click(function() {
       Toast.fire({
@@ -34,5 +33,3 @@
       })
     });
   });
-=======
->>>>>>> b45e7d4fccde5d25bdcde8420bdcec7f417297a7
