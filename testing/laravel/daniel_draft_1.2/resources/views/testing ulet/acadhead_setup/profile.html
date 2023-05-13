@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- Title with PUP logo -->
-        <link rel="icon" href="dist/img/pup.png" />
+        <link rel="icon" href="../dist/img/pup.png" />
         <title>PUPQC | Faculty Records and Monitoring System</title>
 
         <!-- CSS LIST -->
@@ -29,7 +29,7 @@
         <link rel="stylesheet" href="plugins/jqvmap/jqvmap.min.css">
 
         <!-- Theme style -->
-        <link rel="stylesheet" href="dist/css/farms.min.css">
+        <link rel="stylesheet" href="../dist/css/farms.min.css">
 
         <!-- overlayScrollbars -->
         <link rel="stylesheet"
@@ -47,7 +47,7 @@
             rel="stylesheet" />
 
         <!-- Pallete style -->
-        <link rel="stylesheet" href="dist/css/farms.pallete.css">
+        <link rel="stylesheet" href="../dist/css/farms.pallete.css">
 
         <!-- Dependencies for date picker -->
         <link rel="stylesheet"
@@ -104,7 +104,7 @@
         <script
             src="plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
         <!-- Main Script -->
-        <script src="dist/js/farms.js"></script>
+        <script src="../dist/js/farms.js"></script>
 
         <!-- PAGE PLUGINS -->
         <!-- jQuery Mapael -->
@@ -119,13 +119,13 @@
         <script
             src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
         <!-- FARMS DB 1-->
-        <script src="dist/js/pages/dashboard.js"></script>
+        <script src="../dist/js/pages/dashboard.js"></script>
 
         <!-- FARMS DB 2 -->
-        <script src="dist/js/pages/dashboard2.js"></script>
+        <script src="../dist/js/pages/dashboard2.js"></script>
 
         <!-- DB Chart for Summary  -->
-        <script src="dist/js/db_summaryChart.js"></script>
+        <script src="../dist/js/db_summaryChart.js"></script>
 
         <!-- SWEETALERTS SCRIPTS -->
         <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
@@ -139,7 +139,7 @@
         <!-- Preloader -->
         <div class="preloader flex-column justify-content-center
             align-items-center">
-            <img class="animation__shake" src="dist/img/pup.png" height="60"
+            <img class="animation__shake" src="../dist/img/pup.png" height="60"
                 width="60">
         </div>
 
@@ -439,16 +439,16 @@
                                             <div class="row mx-auto">
                                                 <div class="col-md-6">
                                                     <label class="required-input">Faculty Type</label>
-                                                    <input id="myInput" type="text" class="form-control dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" placeholder="e.g. Regular">
+                                                    <input id="selectedOption" readonly type="text" class="form-control dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" placeholder="e.g. Regular">
                                                         <div class="dropdown-menu" id="myDropdown">
-                                                            <button class="dropdown-item" type="button">Faculty extensionist</button>
-                                                            <button class="dropdown-item" type="button">Part-time faculty</button>
-                                                            <button class="dropdown-item" type="button">Regular faculty</button>
+                                                            <button class="dropdown-item d1" type="button">Faculty extensionist</button>
+                                                            <button class="dropdown-item d1" type="button">Part-time faculty</button>
+                                                            <button class="dropdown-item d1" type="button">Regular faculty</button>
                                                         </div>
                                                 </div>
                                                 <div class="col-md-6">
                                                     <label class="required-input">Academic Rank</label>
-                                                    <input id="myInput" type="text" class="form-control dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" placeholder="e.g. Instructor">
+                                                    <input type="text" class="form-control dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" placeholder="e.g. Instructor">
                                                         <div class="dropdown-menu" id="myDropdown">
                                                             <button class="dropdown-item" type="button">Option 1</button>
                                                             <button class="dropdown-item" type="button">Option 2</button>
@@ -457,7 +457,7 @@
                                                 </div>
                                                 <div class="col-md-6">
                                                     <label class="required-input">Designation</label>
-                                                    <input id="myInput" type="text" class="form-control dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" placeholder="e.g. Faculty Mgmt.">
+                                                    <input type="text" class="form-control dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" placeholder="e.g. Faculty Mgmt.">
                                                         <div class="dropdown-menu" id="myDropdown">
                                                             <button class="dropdown-item" type="button">Option 1</button>
                                                             <button class="dropdown-item" type="button">Administrative Personnel</button>
@@ -466,7 +466,7 @@
                                                 </div>
                                                 <div class="col-md-6">
                                                     <label class="required-input">Specialization</label>
-                                                    <input id="myInput" type="text" class="form-control dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" placeholder="e.g. H.R. Mgmt.">
+                                                    <input type="text" class="form-control dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" placeholder="e.g. H.R. Mgmt.">
                                                         <div class="dropdown-menu" id="myDropdown">
                                                             <button class="dropdown-item" type="button">Option 1</button>
                                                             <button class="dropdown-item" type="button">Option 2</button>
@@ -614,14 +614,16 @@
         </footer>
     </div>
 
+    <!-- Local scipt for choosing dropdown item -->
+    <script src="../dist/js/farms.dropitem.js"></script>
 
     <!-- Local script for warning modals -->
-    <script src="dist/js/farms.swal.warning.modal.js"></script>
+    <script src="../dist/js/farms.swal.warning.modal.js"></script>
 
     <!-- Local script for success modals -->
-    <script src="dist/js/farms.swal.success.modal.js"></script>
+    <script src="../dist/js/farms.swal.success.modal.js"></script>
 
     <!-- Script for Date picker -->
-    <script src="dist/js/farms.datepicker.js"></script>
+    <script src="../dist/js/farms.datepicker.js"></script>
     </body>
 </html>
