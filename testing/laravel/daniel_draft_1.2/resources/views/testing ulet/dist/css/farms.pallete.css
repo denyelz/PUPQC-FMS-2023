@@ -1,0 +1,47 @@
+:root
+{
+    --pallete-1: #830404;
+    --pallete-2: #A36605;
+    --pallete-3: #F3C51C;
+    --pallete-4: #ECE09D;
+
+    --text-color-1: #120303;
+    --text-color-2: #FFF;
+}
+
+.pal-1
+{
+    background-color: var(--pallete-1);
+}
+
+.pal-2, .pal-2
+{
+    background-color: var(--pallete-2);
+}
+
+.pal-3
+{
+    background-color: var(--pallete-3);
+}
+
+.pal-4
+{
+    background-color: var(--pallete-4);
+}
+
+.text-col-1
+{
+    color: var(--text-color-1);
+}
+
+.text-col-2
+{
+    color: var(--text-color-2);
+}
+
+/*Stylesheet for text dropdown*/
+
+.p-drop
+{
+  font-size: .8rem;
+}

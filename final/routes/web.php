@@ -33,7 +33,12 @@ use App\Http\Controllers\API\Admin\AdminSystemRoleController;
 e.g.
 
 Route::get('/', function () {
+};
 
+*/
+
+/*
+    For Academic Head Functionalities only, routing functions starts here:
 */
 
 Route::get('/',[AcadHeadDashboardController::class, 'acadhead_dashboard']);
@@ -54,3 +59,11 @@ Route::get('/admin/acadhead_programs', [AdminProgramsController ::class, 'acadhe
 Route::get('/admin/acadhead_role', [AdminRoleController ::class, 'acadhead_role']);
 Route::get('/admin/acadhead_specialization', [AdminSpecializationController ::class, 'acadhead_specialization']);
 Route::get('/admin/acadhead_systemrole', [AdminSystemRoleController ::class, 'acadhead_systemrole']);
+
+/*
+    For Academic Head Functionalities only, routing functions ends here:
+*/
+
+/*
+    For Staff functionalities only, routing functions starts here:
+*/
