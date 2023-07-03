@@ -1,19 +1,20 @@
 <div align="center">
-  # Faculty Monitoring System
-  This is a system that will aid the faculty staff in managing the details of submitting the required documents, class attendance, and campus activities. It will also provide the faculties with automated tools to quickly follow them. It is a web application that offers an automated solution for faculty monitoring that is well-organized and improved.
-  <br>
-  Faculty Monitoring System is to ensure that the faculty members are meeting the performance standards set by the institution. The system allows the administrators to monitor the activities of the faculty members and generate reports based on their performance.
-  <br>
 
-  # Technology Stack
-  **- LaravelAPI**<br>
-  **- EloquentORM**<br>
-  **- MySQL**<br>
-  **- jQuery**<br>
-  **- LaravelBlade**<br>
-  **- Bootstrap**<br>
-  **- Laravel (Database Seeding, Factory, Migration)**<br>
-  **- Javascript (Dropzone JS, EnjoyHint)**<br>
+# Faculty Monitoring System
+This is a system that will aid the faculty staff in managing the details of submitting the required documents, class attendance, and campus activities. It will also provide the faculties with automated tools to quickly follow them. It is a web application that offers an automated solution for faculty monitoring that is well-organized and improved.
+
+<br>
+
+# Technology Stack
+**- LaravelAPI**<br>
+**- EloquentORM**<br>
+**- MySQL**<br>
+**- jQuery**<br>
+**- LaravelBlade**<br>
+**- Bootstrap**<br>
+**- Laravel (Database Seeding, Factory, Migration)**<br>
+**- Javascript (Dropzone JS, EnjoyHint)**<br>
+
 </div>
 
 <br><br>
