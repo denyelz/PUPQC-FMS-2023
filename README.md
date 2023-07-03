@@ -97,7 +97,7 @@ Start the local development server
                 <td>Director</td>
             </tr>
             <tr>
-                <td>checker@pupqc.com</td>
+                <td>staff@pupqc.com</td>
                 <td>pupqcfarms</td>
                 <td>Checker</td>
             </tr>
